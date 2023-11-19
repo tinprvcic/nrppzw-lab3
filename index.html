@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igra asteroida</title>
+
+    <style>
+      :root,
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        position: relative;
+      }
+
+      #root-canvas {
+        background-color: #000;
+      }
+
+      .time-container {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        min-width: 200px;
+
+        font-family: monospace;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="root-canvas"></canvas>
+
+    <div class="time-container">
+      <p>best time: <span id="bestTime" /></p>
+      <p>current time: <span id="currentTime" /></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
